@@ -5,6 +5,9 @@ import Button from "./Button"
 
 const Navbar = () => {
   return (
+
+    
+
     <nav className=" flexBetween max-container 
     padding-container relative z-30 py-5 ">
 
@@ -24,9 +27,21 @@ cursor-pointer pb-1.5 transition-all hover:font-bold ">
 
       </ul>
 
-<div className="lg:flexcenter  hidden ">
-<Button />
-</div>
+      <div className="lg:flexCenter  hidden ">
+        <Button
+          type="button"
+          title="Login"
+          icon="/user.svg"
+          variant="btn_dark_green"
+        />
+      </div>
+
+      <Image src="menu.svg"
+        alt="menu"
+        width={32}
+        height={32}
+        className="inline-block cursor-pointer lg:hidden" />
+
     </nav>
   )
 }

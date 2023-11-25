@@ -1,9 +1,22 @@
-import Image from 'next/image'
+import Hero from './components/Hero'
+import GetApp from './components/GetApp'
+import Features from './components/Features'
+import Camp from './components/Camp'
+import Guide from './components/Guide'
 
 export default function Home() {
   return (
-    <main className="font-bold text-teal-500 text-2xl">
-    <h1>hellow world !</h1>
-    </main>
+    
+    <>
+    <Hero />
+    <GetApp />
+    <Features />
+    <Camp />
+    <Guide />
+    
+
+    
+    
+    </>
   )
 }
